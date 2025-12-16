@@ -18,14 +18,17 @@ public class Customer {
 
     @Id
     private Integer id;
-
+    
     @NotBlank(message = "Name is mandatory")
-    @Size(min = 2, max = 30, message = "Name must be between 2 and 30 characters")
+    @Size(min = 2, max = 30, message = "Name must be between 5 and 30 characters")
     private String name;
-    @Email(message = "Email should be valid")
+    
+    @Email(message = "Should be a valid email")
     private String email;
+    
     @NotBlank(message = "Phone is mandatory")
-    @Size(min = 2, max = 30, message = "Phone must be 10 digits")
+    
+    @Size(min = 2, max = 30, message = "Phone must be exact 10 digits")
     private String phone;
 
 }
