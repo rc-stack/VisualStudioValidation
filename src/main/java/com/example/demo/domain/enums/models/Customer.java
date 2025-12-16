@@ -28,7 +28,7 @@ public class Customer {
     
     @NotBlank(message = "Phone is mandatory")
     
-    @Size(min = 2, max = 30, message = "Phone must be exact 10 digits")
+    @Size(min = 2, max = 30, message = "Let's make a rollback")
     private String phone;
 
 }
